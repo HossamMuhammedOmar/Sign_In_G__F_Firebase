@@ -1,3 +1,4 @@
+import 'package:Sign_In_G__F_Firebase/src/widgets/google_button.dart';
 import 'package:flutter/material.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -28,25 +29,12 @@ class SignInScreen extends StatelessWidget {
           ),
         ),
         SizedBox(height: 10.0),
-        RaisedButton(
-          color: Colors.white,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.all(
-              Radius.circular(5.0),
-            ),
-          ),
-          onPressed: () {},
-          padding: EdgeInsets.all(20.0),
-          child: Text(
-            'Sign in with Google',
-            style: TextStyle(
-              color: Colors.grey[700],
-              fontWeight: FontWeight.bold,
-              fontSize: 16.0,
-            ),
-          ),
-        ),
+        GoogleButton(_onPressGoogleButton),
       ],
     );
+  }
+
+  _onPressGoogleButton() {
+    print('Google Button');
   }
 }
