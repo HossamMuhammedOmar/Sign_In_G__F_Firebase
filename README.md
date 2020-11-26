@@ -1,4 +1,4 @@
-# Sign_In_G__F_Firebase
+# Sign In With Google, Facebook using Firebase
 
 A new Flutter project.
 
