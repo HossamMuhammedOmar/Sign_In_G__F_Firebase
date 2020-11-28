@@ -1,3 +1,4 @@
+import 'package:Sign_In_G__F_Firebase/src/widgets/anonymous_button.dart';
 import 'package:Sign_In_G__F_Firebase/src/widgets/email_button.dart';
 import 'package:Sign_In_G__F_Firebase/src/widgets/facebook_button.dart';
 import 'package:Sign_In_G__F_Firebase/src/widgets/google_button.dart';
@@ -30,12 +31,22 @@ class SignInScreen extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: 10.0),
+        SizedBox(height: 50.0),
         GoogleButton(_onPressGoogleButton),
         SizedBox(height: 10.0),
         FacebookButton(_onPressFacebookButton),
         SizedBox(height: 10.0),
-        EmailButton(_onPressEmailButton)
+        EmailButton(_onPressEmailButton),
+        SizedBox(height: 10.0),
+        Text(
+          'or',
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 15.0,
+          ),
+        ),
+        SizedBox(height: 10.0),
+        AnonymousButton(_onPressAnonymousButton),
       ],
     );
   }
@@ -49,6 +60,10 @@ class SignInScreen extends StatelessWidget {
   }
 
   _onPressEmailButton() {
+    print('Email Button');
+  }
+
+  _onPressAnonymousButton() {
     print('Email Button');
   }
 }

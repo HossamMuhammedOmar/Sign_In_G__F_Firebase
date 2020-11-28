@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class EmailButton extends StatelessWidget {
+class AnonymousButton extends StatelessWidget {
   final VoidCallback callBackFun;
   final double width;
   final double height;
-  EmailButton(this.callBackFun, [this.height, this.width]);
+  AnonymousButton(this.callBackFun, [this.height, this.width]);
 
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
-      color: Color(0xffD0021B),
+      color: Color(0xff34495e),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(
           Radius.circular(5.0),
@@ -21,15 +21,14 @@ class EmailButton extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Image.asset(
-            'lib/src/images/email-white.png',
+            'lib/src/images/anonymous.png',
             width: 25.0,
           ),
           Text(
-            'Sign in with email',
+            'Go anonymous',
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
+              color: Color(0xffecf0f1),
               fontSize: 16.0,
             ),
           ),
