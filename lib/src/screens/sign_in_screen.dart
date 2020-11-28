@@ -1,3 +1,4 @@
+import 'package:Sign_In_G__F_Firebase/src/widgets/facebook_button.dart';
 import 'package:Sign_In_G__F_Firebase/src/widgets/google_button.dart';
 import 'package:flutter/material.dart';
 
@@ -30,11 +31,17 @@ class SignInScreen extends StatelessWidget {
         ),
         SizedBox(height: 10.0),
         GoogleButton(_onPressGoogleButton),
+        SizedBox(height: 10.0),
+        FacebookButton(_onPressFacebookButton),
       ],
     );
   }
 
   _onPressGoogleButton() {
     print('Google Button');
+  }
+
+  _onPressFacebookButton() {
+    print('Facebook Button');
   }
 }
