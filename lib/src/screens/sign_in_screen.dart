@@ -1,3 +1,4 @@
+import 'package:Sign_In_G__F_Firebase/src/widgets/email_button.dart';
 import 'package:Sign_In_G__F_Firebase/src/widgets/facebook_button.dart';
 import 'package:Sign_In_G__F_Firebase/src/widgets/google_button.dart';
 import 'package:flutter/material.dart';
@@ -33,6 +34,8 @@ class SignInScreen extends StatelessWidget {
         GoogleButton(_onPressGoogleButton),
         SizedBox(height: 10.0),
         FacebookButton(_onPressFacebookButton),
+        SizedBox(height: 10.0),
+        EmailButton(_onPressEmailButton)
       ],
     );
   }
@@ -43,5 +46,9 @@ class SignInScreen extends StatelessWidget {
 
   _onPressFacebookButton() {
     print('Facebook Button');
+  }
+
+  _onPressEmailButton() {
+    print('Email Button');
   }
 }
